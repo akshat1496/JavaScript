@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC EVEMTS</title>
+</head>
+<body>
+    <h1>AKSAHT SRIAVSTAVA</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+
+</body>
+<script>
+    // setInterval( function () {
+    //     // console.log("Akshat", Date.now());
+    // },1000)
+
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    } ;
+
+    // clearInterval(startPrint);
+    
+    let startpoint;
+
+    document.querySelector('#start').addEventListener('click',()=>{
+        document.querySelector('h1').innerHTML = 'Started';
+       startpoint= setInterval(sayDate , 1000 ,'akshat');
+    });
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        document.querySelector('h1').innerHTML = 'Stoped';
+       clearInterval(startpoint);
+    });
+
+
+
+</script>
+</html>

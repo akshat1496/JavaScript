@@ -1,0 +1,2 @@
+
+        this._email = value;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM New Element Creation</title>
+</head>
+<body style = " background-color: black; color: antiquewhite;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    
+    // console.log(parent);
+    console.log('GIVES CHILDREN ELEMENTS :-',parent.children);
+  
+    // console.log(parent.children[0].innerHTML);
+    
+    const Converted_Array = Array.from(parent.children);
+    
+    // console.log(Converted_Array);
+    // Converted_Array.forEach( (el)=>{
+    //     console.log(el.innerHTML);
+    // })
+    
+    // parent.children[1].style.color = 'orange';
+
+    // console.log(` First Element Child :- `,parent.firstElementChild);
+    // console.log(` Last Element Child :- `,parent.lastElementChild);
+
+    const dayOne =  document.querySelector('.day');
+    // console.log(dayOne);
+
+    // TO GET PARENT ELEMENT FROM CHILDREN
+    // console.log(`Gives parent Element`,dayOne.parentElement);
+
+    console.log(`Nodes :- `,parent.childNodes);
+</script>
+</html>

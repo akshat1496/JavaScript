@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2{
+    color: antiquewhite;
+ 
+}
+.main-container {
+    text-align: center;
+    margin: 100px auto 100px;
+    width:80%;
+}
+
+
+span {
+    display: block;
+}
+
+.button {
+    width: 100px;
+  height: 100px;
+  border: solid rgb(252, 239, 239) 2px;
+  display: inline-block;
+}
+
+#grey{
+    background-color: gray;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+#white{
+    background-color: azure;
+}
